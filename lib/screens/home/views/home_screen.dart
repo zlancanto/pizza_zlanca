@@ -11,13 +11,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String appBarPizzaImg = 'https://firebasestorage.googleapis.com/v0/b/pizza-delivery-2bf74.firebasestorage.app/o/8.png?alt=media&token=93733030-fc74-4682-84d5-175d2c743471';
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.surface,
         title: Row(
           children: [
-            Image.asset('assets/8.png', scale: 14),
+            Image.network(appBarPizzaImg, scale: 14),
             SizedBox(width: 8),
             Text(
               'PIZZA',
