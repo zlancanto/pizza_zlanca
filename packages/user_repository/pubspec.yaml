@@ -1,0 +1,41 @@
+name: user_repository
+description: Le dépôt qui gère les utilisateurs
+
+# Empêche la publication accidentelle de ce package sur pub.dev (le dépôt public)
+# 'none' est courant pour les applications principales ou les packages internes
+publish_to: none
+
+# La version actuelle du package, suivant le versionnage sémantique (Major.Minor.Patch)
+# Ici, c'est une version initiale de développement.
+version: 1.0.0+1
+
+# Définit les contraintes de version pour le SDK Dart requis par ce package
+environment:
+  sdk: ^3.7.2
+
+# Liste des dépendances externes requises pour que le code de CE package fonctionne.
+# Ces packages seront inclus dans votre application finale.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  equatable: ^2.0.7
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.17.5
+  firebase_storage: ^11.6.5
+  rxdart: ^0.28.0
+  path: ^1.9.1
+
+# Liste des dépendances requises UNIQUEMENT pour le développement et les tests de CE package.
+# Elles ne sont pas incluses lorsque ce package est utilisé par un autre
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Aide à maintenir un code propre et à détecter les erreurs potentielles.
+  flutter_lints: ^5.0.0
+
+# Section spécifique à la configuration de Flutter
+flutter:
+  # Indique que ce package utilise des éléments de Material Design (widgets, icônes).
+  uses-material-design: true
